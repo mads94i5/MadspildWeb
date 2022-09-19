@@ -17,4 +17,18 @@ public class Signup {
     private int zipCode;
     @Email
     private String email;
+
+    public Signup() {
+    }
+
+    public Signup(Long id, int zipCode, String email) {
+        this.id = id;
+        this.zipCode = zipCode;
+        this.email = email;
+    }
+
+    public Signup(int zipCode, String email) {
+        this.zipCode = zipCode;
+        this.email = email;
+    }
 }
