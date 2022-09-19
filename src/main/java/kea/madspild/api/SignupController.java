@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/register")
 public class SignupController {
 
-    private SignupService signupService;
+    private final SignupService signupService;
 
     public SignupController(SignupService signupService) {
         this.signupService = signupService;
@@ -23,7 +23,7 @@ public class SignupController {
         return new SignupDto();
     }
     @PostMapping
-    public String registerUserAccount(@ModelAttribute("signup") SignupDto signupDto) {
+    public String registerSignup(@ModelAttribute("signup") SignupDto signupDto) {
         signupService.save(signupDto);
         return "redirect:/register?success";
     }
