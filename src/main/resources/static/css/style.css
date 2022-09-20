@@ -1,9 +1,14 @@
 .fixed {
+    border: 1px solid black;
     overflow: hidden;
     background-color: blue;
-    position: fixed;
-    top: 0;
+    top: 40%;
     right: 0;
     width: 20%;
-    float: right
+    position: fixed;
+    text-align: center;
+}
+.contact-form {
+    float: right;
+    border: 1px solid black;
 }
