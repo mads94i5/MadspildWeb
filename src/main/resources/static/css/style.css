@@ -7,8 +7,7 @@
     width: 20%;
     float: right;
     text-align: center;
-    border: black;
-    border-style: solid;
+    border: 1px solid black;
 }
 
 .report {
@@ -18,7 +17,6 @@
     width: 15%;
     top: 35%;
     right: 42%;
-    border: black;
-    border-style: solid;
+    border: 1px solid black;
 
 }
