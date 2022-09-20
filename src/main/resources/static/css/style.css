@@ -7,6 +7,10 @@
     width: 20%;
     float: right;
     text-align: center;
-    border: black;
-    border-style: solid;
+    border: 1px solid black;
+}
+.report-form {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
 }

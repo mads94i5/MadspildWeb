@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>Title</title>
 </head>
 <body>
 
 
-<span class="fixed">
+<div class="report-form">
 
         <form method="post" action="report">
-        <input name="LocName" placeholder="Location name" type="text" required/><br>
-        <input name="Email" placeholder="Email" type="email" required/><br>
-        <input name="Adress" placeholder="Adress" type="text" required/><br>
-        <input name="Zipcode" placeholder="Zipcode" type="text" required/><br>
-        <textarea name="Comment" rows="10" placeholder="Comment"></textarea><br>
+        <input name="name" placeholder="Location name" type="text" required/><br>
+        <input name="address" placeholder="Address" type="text" required/><br>
+        <input name="zipcode" placeholder="Zipcode" type="text" required/><br>
+        <textarea name="comment" rows="10" placeholder="Comment"></textarea><br>
         <input class="formBtn" type="submit"/>
         <input class="formBtn" type="reset"/>
     </form>
-</span>
+</div>
 
 </body>
 </html>
