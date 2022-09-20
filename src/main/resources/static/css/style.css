@@ -7,6 +7,23 @@ a:link{
 a:visited{
     color: darkgreen;
 }
+input[type=button] {
+    border: 3px solid forestgreen;
+    background-color: darkgreen;
+    color: white;
+    text-outline: 1px black;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+input[type=button]:hover {
+    background-color: green;
+}
+input[type=button]:active {
+    background-color: forestgreen;
+}
+.content{
+    text-align: center;
+}
 .fixed {
     overflow: hidden;
     background-color: darkgray;
@@ -33,4 +50,11 @@ a:visited{
 
 .form{
 width: 80%;
+}
+
+.info{
+    text-align: justify;
+    width: 30%;
+    margin-left: 30%;
+    text-indent: revert;
 }
