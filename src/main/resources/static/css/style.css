@@ -1,14 +1,12 @@
 .fixed {
-    border: 1px solid black;
     overflow: hidden;
-    background-color: blue;
-    top: 40%;
-    right: 0;
-    width: 20%;
+    background-color: darkgray;
     position: fixed;
-    text-align: center;
-}
-.contact-form {
+    top: 40%;
+    right: 2%;
+    width: 20%;
     float: right;
-    border: 1px solid black;
+    text-align: center;
+    border: black;
+    border-style: solid;
 }
