@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Madspild Website</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+    <section>
+        <h2 id="text">STOP MADSPILD</h2>
 
+        <img src="/images/bg.jpg" id="bg" alt="bg">
+        <img src="/images/moon.png" id="moon" alt="moon">
+        <img src="/images/mountain.png" id="mountain" alt="mountain">
+        <img src="/images/road.png" id="road" alt="road">
+    </section>
+
+<script type="text/javascript">
+    //Fancy JavaScript parallax scrolling
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text");
+
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.01 + 'px';
+        road.style.top = value * 0.5 + 'px';
+        text.style.top = value + 'px';
+
+
+    })
+</script>
 </body>
 </html>
