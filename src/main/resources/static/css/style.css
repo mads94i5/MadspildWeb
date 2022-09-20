@@ -1,0 +1,12 @@
+.fixed {
+    overflow: hidden;
+    background-color: darkgray;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+    width: 20%;
+    float: right;
+    text-align: center;
+    border: black;
+    border-style: solid;
+}
