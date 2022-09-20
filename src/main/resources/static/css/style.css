@@ -1,3 +1,12 @@
+html {
+    font-family: "Roboto Thin", sans-serif;
+}
+a:link{
+    color: forestgreen;
+}
+a:visited{
+    color: darkgreen;
+}
 .fixed {
     overflow: hidden;
     background-color: darkgray;
@@ -8,7 +17,6 @@
     max-width: 200px;
     float: right;
     text-align: center;
-    border: 1px solid black;
     border: 1px solid black;
 }
 
