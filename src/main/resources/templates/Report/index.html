@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Madspild | Rapportér</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+
 <nav>
-    <a href="/">Forside</a>
-    <a href="/about">Om os</a>
-    <a href="/report">Rapportér madspild</a>
+    <a href="/"><input type="button" value="Forside"></a>
+    <a href="/about"><input type="button" value="Om os"></a>
+    <a href="/report"><input type="button" value="Rapportér madspild"></a>
 </nav>
 
 <div class="report">
-
+<h2 style="text-align: center">Rapportér madspild i postnummer</h2>
 <br>
-        <form method="post" action="report">
-        <input class="form" name="locname" placeholder="Location name" type="text" required/><br>
-        <input class="form" name="email" placeholder="Email" type="email" required/><br>
-        <input class="form" name="address" placeholder="Adress" type="text" required/><br>
-        <input class="form" name="zipcode" placeholder="Zipcode" type="text" required/><br>
-        <textarea class="form" name="Comment" rows="10" placeholder="Comment"></textarea><br>
-        <input class="formBtn" type="submit"/>
-        <input class="formBtn" type="reset"/>
+        <form th:action="@{/report}" method="post" th:object="${report}">
+        <input class="form" name="loc-name" placeholder="Indtast navn/sted.." type="text" th:field="*{name}" required/><br>
+        <input class="form" name="address" placeholder="Indtast addresse.." type="text" th:field="*{address}" required/><br>
+        <input class="form" name="zipcode" placeholder="Indtast postnummer.." type="number" minlength="3" maxlength="4" th:field="*{zipCode}" required/><br>
+        <textarea class="form" name="comment" rows="10" placeholder="Beskrivelse.." th:field="*{description}" required></textarea><br>
+        <input class="formBtn" type="submit" value="Indsend"/>
+        <input class="formBtn" type="reset" value="Slet"/>
     </form>
+    <span th:if="${param.success}">
+        Madspild rapportéret. E-mails bliver sendt ud til alle tilmeldte i postnummeret.
+    </span>
     <br>
 
 </div>
 </body>
+<footer>
+    <span class="footer-background">
+    </span>
+    <span class="footer-logo"><img src="/images/logo.jpg" height="50" width="50" alt="logo"></span>
+    <span class="footer-right-column">
+        <p class="footer-text" >Guldbergsgade 29N</p>
+        <p class="footer-text" >2200 København N</p>
+        <p class="footer-text" >CVR-nr.: 694201337</p>
+    </span>
+    <div class="footer-middle-column">
+        <p class="footer-text">Organisation mod madspild og fødevaretab i alle former</p>
+        <a class="footer-text footer-link" href="https://www.facebook.com">Facebook</a>
+        <a class="footer-text footer-link" href="https://www.twitter.com">Twitter</a>
+        <a class="footer-text footer-link" href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+
+
+</footer>
 </html>

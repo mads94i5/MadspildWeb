@@ -1,20 +1,22 @@
 package kea.madspild.ents;
-
 import org.springframework.format.annotation.NumberFormat;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "reports")
 public class Report {
     @Id
     @GeneratedValue
+    @Column(name = "id")
     private Long id;
-    @NumberFormat
-    private int zipCode;
+    @Column(name = "name")
     private String name;
+    @Column(name = "address")
     private String address;
+    @NumberFormat
+    @Column(name = "zipcode")
+    private int zipCode;
+    @Column(name = "description")
     private String description;
 
     public Report() {

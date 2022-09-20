@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Madspild | Forside</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 
 <nav>
-    <a href="/">Forside</a>
-    <a href="/about">Om os</a>
-    <a href="/report">Rapportér madspild</a>
+    <a href="/"><input type="button" value="Forside"></a>
+    <a href="/about"><input type="button" value="Om os"></a>
+    <a href="/report"><input type="button" value="Rapportér madspild"></a>
 </nav>
 
-<div>
-    <p>tilfældig tekst</p>
-</div>
 <div class="fixed">
-
-    <p>Tilmeld dig nyhedsbrev</p>
-
-    <span>
-
-    <form method="post" action="register">
-        <input class="form" name="zipcode" placeholder="Zipcode" type="Number" required /><br>
-        <input class="form" name="email" placeholder="Email" type="email" required /><br>
-        <input class="formBtn" type="submit" />
-        <input class="formBtn" type="reset" />
-    </form>
-        <br>
-        </span>
+    <p>Få e-mails om madspild <br> i dit område</p>
+        <a href="/register"><input type="button" value="Klik her"></a>
 </div>
 <div class="info">
+    <h2 style="text-align: center">Madspild i Danmark</h2>
 <p>Hver dag bliver der smidt næsten 2.000 tons fødevarer ud i Danmark. Men nu går indsatsen mod madspild ind i en ny faseOrganisationen -Danmarkmod Madspild–ønsker via en webside at gøre det nemmere at undgå madspild eller informere forbrugere om madspild.</p>
 <br>
     <h3 style="text-align: center">Værd at vide om madspild</h3>
 
     - Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år. <br><br>
     - Det største madspild i servicesektoren stammer fra detailhandelen, der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.<br><br>
-    - Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.
+    - Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.<br><br>
 
+    <h3 style="text-align: center">Hvad kan du gøre?</h3>
+
+    - Hvis du har betydelige mængder mad der vil gå til spilde, så rapportér madspild i dit postnummer her på siden. Så bliver der sendt en e-mail ud til de tilmeldte, så de har mulighed for at nyde et billigt eller gratis måltid.<br><br>
+    - Tilmeld dig at få e-mails når der der nogen der rapportérer madspild i dit postnummer. Du kan sagtens melde dig til flere postnumre, så skal du bare tilmelde din mail flere gange.<br><br>
+
+    <h3 style="text-align: center">Det er løgn og latin</h3>
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum, dolorem error est fugit in inventore molestiae mollitia, placeat possimus quaerat quas quod repellat saepe sed similique vel veniam vitae.<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt distinctio earum enim eos error explicabo, illo illum, laudantium libero magnam molestiae nulla odit, suscipit vitae voluptatem. Amet, officia.<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad, autem blanditiis debitis deleniti dicta eaque eius error exercitationem inventore iste laborum magnam minima, nemo placeat quaerat totam velit vitae?<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores inventore laborum qui recusandae reiciendis sed ullam! Adipisci asperiores aut cupiditate eaque est harum nobis perferendis quo rerum saepe?<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et explicabo facere fugit mollitia praesentium? A ad aliquam deserunt earum ex explicabo, incidunt magni porro quia reiciendis sapiente sit, suscipit, voluptatem.<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eos illum laboriosam laudantium numquam omnis, quaerat quisquam quod rem velit. Ab adipisci, corporis debitis dolores fugiat minima mollitia perspiciatis ratione.<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam consequuntur corporis, dolorum excepturi exercitationem fuga id iste itaque laboriosam molestias nisi pariatur perspiciatis quia quidem quo sint! Excepturi?<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda beatae blanditiis consequatur distinctio est eveniet, ex harum iusto labore molestiae nulla odio quis quod recusandae, sed sequi veniam voluptatibus.<br>
 </div>
 
 
 </body>
 <footer>
     <span class="footer-background">
-
     </span>
-    <div class="footer-logo">Logo placeholder</div>
-    <div class="footer-middle-column">
-        <p class="footer-text">Organisation mod madspild og fødevaretab i alle former</p>
-        <a class="footer-text" href="https://www.facebook.com">Facebook</a>
-        <a class="footer-text" href="https://www.twitter.com">Twitter</a>
-        <a class="footer-text" href="https://www.linkedin.com">LinkedIn</a>
-    </div>
+    <span class="footer-logo"><img src="/images/logo.jpg" height="50" width="50" alt="logo"></span>
     <span class="footer-right-column">
         <p class="footer-text" >Guldbergsgade 29N</p>
         <p class="footer-text" >2200 København N</p>
         <p class="footer-text" >CVR-nr.: 694201337</p>
     </span>
+    <div class="footer-middle-column">
+        <p class="footer-text">Organisation mod madspild og fødevaretab i alle former</p>
+        <a class="footer-text footer-link" href="https://www.facebook.com">Facebook</a>
+        <a class="footer-text footer-link" href="https://www.twitter.com">Twitter</a>
+        <a class="footer-text footer-link" href="https://www.linkedin.com">LinkedIn</a>
+    </div>
 </footer>
 </html>

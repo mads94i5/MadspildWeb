@@ -1,7 +1,5 @@
 package kea.madspild.srvs;
-
-import kea.madspild.dao.SignupDto;
-
+import kea.madspild.ents.Signup;
 public interface SignupService {
-    int save(SignupDto signupDto);
+    Signup save(Signup signup);
 }

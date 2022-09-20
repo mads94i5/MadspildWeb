@@ -1,7 +1,5 @@
 package kea.madspild.srvs;
-
-import kea.madspild.dao.ReportDto;
-
+import kea.madspild.ents.Report;
 public interface ReportService {
-    int save(ReportDto reportDto);
+    Report save(Report report);
 }

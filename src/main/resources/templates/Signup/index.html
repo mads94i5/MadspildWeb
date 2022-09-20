@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Madspild | Om os</title>
+    <title>Madspild | Tilmeld</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
@@ -12,12 +12,21 @@
     <a href="/about"><input type="button" value="Om os"></a>
     <a href="/report"><input type="button" value="Rapportér madspild"></a>
 </nav>
+
 <div class="info">
-    <h2 style="text-align: center">Om os</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet consectetur consequuntur dignissimos, distinctio dolorem eveniet fugiat in incidunt magnam magni nulla praesentium quasi quod rem saepe tempore ullam vitae?
-    </p>
-</div>
+    <h2>Få e-mails om madspild i dit postnummer.</h2>
+<p> Hvis nogen har for meget, får du besked.</p>
+    <form th:action="@{/register}" method="post" th:object="${signup}">
+        <input class="form" type="number" name="zipcode" minlength="3" maxlength="4" placeholder="Indtast postnummer.." th:field="*{zipCode}" required /><br>
+        <input class="form" type="email" name="email" placeholder="Indtast email.." th:field="*{email}" required /><br>
+        <input class="formBtn" type="submit" value="Tilmeld"/>
+        <input class="formBtn" type="reset" value="Slet"/>
+    </form>
+    <span th:if="${param.success}">
+        Du er registreret.
+    </span>
+        <br><br>
+        </div>
 </body>
 <footer>
     <span class="footer-background">
@@ -34,5 +43,7 @@
         <a class="footer-text footer-link" href="https://www.twitter.com">Twitter</a>
         <a class="footer-text footer-link" href="https://www.linkedin.com">LinkedIn</a>
     </div>
+
+
 </footer>
 </html>

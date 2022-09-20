@@ -2,7 +2,6 @@ html {
     font-family: "Roboto Thin", sans-serif;
     margin-top: -8px;
     margin-left: -8px;
-    margin-right: -8px;
 }
 a:link{
     color: forestgreen;
@@ -17,19 +16,69 @@ input[type=button] {
     text-outline: 1px black;
     border-radius: 0.5em;
     padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 input[type=button]:hover {
     background-color: green;
+    text-decoration: underline;
 }
 input[type=button]:active {
     background-color: forestgreen;
+}
+input[type=submit] {
+    border: 3px solid forestgreen;
+    background-color: darkgreen;
+    color: white;
+    text-outline: 1px black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+input[type=submit]:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+input[type=submit]:active {
+    background-color: forestgreen;
+}
+input[type=reset] {
+    border: 3px solid forestgreen;
+    background-color: darkgreen;
+    color: white;
+    text-outline: 1px black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+input[type=reset]:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+input[type=reset]:active {
+    background-color: forestgreen;
+}
+input[type=text], input[type=email], input[type=number], textarea {
+    margin: 0.5em;
+    border-style: outset;
+    border-width: 3px;
+    border-color: darkslategrey;
+    border-radius: 10px;
+    background: #293133;
+    color: white;
+}
+input[type=text], input[type=email], input[type=number] {
+    height: 30px;
 }
 .content{
     text-align: center;
 }
 .fixed {
     overflow: hidden;
-    background-color: darkgray;
+    background-color: darkslategrey;
+    color: white;
     position: fixed;
     top: 40%;
     right: 2%;
@@ -37,18 +86,20 @@ input[type=button]:active {
     max-width: 200px;
     float: right;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid green;
+    border-radius: 1em;
+    max-height: 11em;
 }
 
 .report {
     position: fixed;
-    background-color: darkgray;
+    background-color: darkslategrey;
+    color: white;
     text-align: center;
-    width: 25%;
-    top: 35%;
-    right: 42%;
+    width: 35%;
+    top: 6em;
+    right: 32.5%;
     border: 1px solid black;
-
 }
 
 .form{
@@ -56,16 +107,17 @@ width: 80%;
 }
 
 .info{
+    margin-top: 1em;
     text-align: justify;
-    width: 30%;
+    width: 40%;
     margin-left: 30%;
     text-indent: revert;
 }
 nav {
     background-color: black;
-    padding: 10px;
     text-align: center;
     width: 100%;
+    padding-right: 8px;
 
     /* Pay special attention here! */
     position: sticky;
@@ -75,7 +127,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0px 140px;
+    margin: 0px 5%;
 }
 
 nav a:link{
@@ -99,35 +151,40 @@ nav a:hover {
 footer{
     background: darkslategrey;
     margin-top: -5px;
-    margin-left: -8px;
     position: fixed;
     bottom: 0;
     width: 100%;
     min-height: 7em;
+    max-height: 6em;
+    font-size: 0.8em;
+}
+footer a{
+    padding-right: 1em;
 }
 .footer-logo {
-    width: 30%;
-    height: 30px;
     margin-left: 2em;
-    margin-bottom: -3em;
+    padding-top: 1.5em;
     color: white;
+    object-position: bottom;
+    position: fixed;
 }
 .footer-middle-column {
     text-align: center;
     width: 45%;
-    margin-left: 19em;
-    margin-bottom: -5em;
+    margin: -0.5em 25% -6.5em;
 }
 .footer-right-column {
     float: right;
     width: 20%;
-    margin-top: 1em;
+    margin-bottom: 10em;
+    margin-top: -0.5em;
+    margin-right: 1em;
+    min-width: 120px;
 }
-.footer-background{
-    border: 1px solid black;
+.footer-background {
     background: #828b8f;
 }
-.footer-text{
+.footer-text {
     text-align: center;
     color: white;
 }
