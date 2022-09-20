@@ -8,9 +8,16 @@
     float: right;
     text-align: center;
     border: 1px solid black;
-}
-.report-form {
     border: 1px solid black;
+}
+
+.report {
+    position: fixed;
+    background-color: darkgray;
     text-align: center;
-    width: 100%;
+    width: 15%;
+    top: 35%;
+    right: 42%;
+    border: 1px solid black;
+
 }
