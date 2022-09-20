@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
 </head>
+
+
+
 <body>
+<div style="float: left; alignment: left">
+    <p>tilfældig tekst</p>
+</div>
+<div id="contactForm">
+
+    <p>Tilmeld dig nyhedsbrev</p>
+
+    <span class="fixed">
+    <form method="post" action="#">
+        <input name="Name" placeholder="Name" type="text" required /><br>
+        <input name="Email" placeholder="Email" type="email" required /><br>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+    </form>
+        </span>
+</div>
 
 </body>
 </html>
