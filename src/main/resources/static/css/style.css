@@ -4,7 +4,8 @@
     position: fixed;
     top: 40%;
     right: 2%;
-    width: 20%;
+    width: 25%;
+    max-width: 200px;
     float: right;
     text-align: center;
     border: 1px solid black;
@@ -14,9 +15,13 @@
     position: fixed;
     background-color: darkgray;
     text-align: center;
-    width: 15%;
+    width: 25%;
     top: 35%;
     right: 42%;
     border: 1px solid black;
 
+}
+
+.form{
+width: 80%;
 }
