@@ -10,3 +10,15 @@
     border: black;
     border-style: solid;
 }
+
+.report {
+    position: fixed;
+    background-color: darkgray;
+    text-align: center;
+    width: 15%;
+    top: 35%;
+    right: 42%;
+    border: black;
+    border-style: solid;
+
+}
