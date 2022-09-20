@@ -1,5 +1,8 @@
 html {
     font-family: "Roboto Thin", sans-serif;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 a:link{
     color: forestgreen;
@@ -57,4 +60,39 @@ width: 80%;
     width: 30%;
     margin-left: 30%;
     text-indent: revert;
+}
+nav {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+    /* Pay special attention here! */
+    position: sticky;
+    top: 0px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 140px;
+}
+
+nav a:link{
+    color: white;
+}
+
+nav a:visited{
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
