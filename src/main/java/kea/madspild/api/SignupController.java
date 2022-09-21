@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
+
 @Controller
 @RequestMapping("/register")
 public class SignupController {
@@ -23,7 +26,7 @@ public class SignupController {
         return "Signup/index";
     }
     @PostMapping
-    public String registerSignup(@ModelAttribute("signup") Signup signup) {
+    public String registerSignup(@Valid @ModelAttribute("signup") Signup signup) {
         signupService.save(signup);
         return "redirect:/register?success";
     }

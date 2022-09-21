@@ -60,6 +60,9 @@ input[type=reset]:hover {
 input[type=reset]:active {
     background-color: forestgreen;
 }
+textarea{
+    resize: none;
+}
 input[type=text], input[type=email], input[type=number], textarea {
     margin: 0.5em;
     border-style: outset;

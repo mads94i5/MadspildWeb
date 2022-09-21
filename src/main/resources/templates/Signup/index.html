@@ -17,7 +17,7 @@
     <h2>Få e-mails om madspild i dit postnummer.</h2>
 <p> Hvis nogen har for meget, får du besked.</p>
     <form th:action="@{/register}" method="post" th:object="${signup}">
-        <input class="form" type="number" name="zipcode" minlength="3" maxlength="4" placeholder="Indtast postnummer.." th:field="*{zipCode}" required /><br>
+        <input class="form" type="number" name="zipcode" id="zipcode" min="800" max="9990" minlength="3" maxlength="4" placeholder="Indtast postnummer.." th:field="*{zipCode}" required /><br>
         <input class="form" type="email" name="email" placeholder="Indtast email.." th:field="*{email}" required /><br>
         <input class="formBtn" type="submit" value="Tilmeld"/>
         <input class="formBtn" type="reset" value="Slet"/>
@@ -46,4 +46,7 @@
 
 
 </footer>
+<script>
+    document.getElementById("zipcode").defaultValue = "";
+</script>
 </html>

@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
+
 @Controller
 @RequestMapping("/report")
 public class ReportController {
@@ -21,7 +24,7 @@ public class ReportController {
         return "Report/index";
     }
     @PostMapping
-    public String registerReport(@ModelAttribute("report") Report report) {
+    public String registerReport(@Valid @ModelAttribute("report") Report report) {
         reportService.save(report);
         return "redirect:/report?success";
     }

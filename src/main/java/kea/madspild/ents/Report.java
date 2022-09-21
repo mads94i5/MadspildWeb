@@ -1,6 +1,8 @@
 package kea.madspild.ents;
 import org.springframework.format.annotation.NumberFormat;
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
 @Entity
 @Table(name = "reports")
@@ -14,6 +16,8 @@ public class Report {
     @Column(name = "address")
     private String address;
     @NumberFormat
+    @Min(value = 800, message = "Zipcode must be greater than or equal to 800")
+    @Max(value = 9990, message = "Zipcode must be smaller than or equal to 9990")
     @Column(name = "zipcode")
     private int zipCode;
     @Column(name = "description")
