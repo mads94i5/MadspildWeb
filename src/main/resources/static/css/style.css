@@ -4,10 +4,10 @@ html {
     margin-left: -8px;
 }
 a:link{
-    color: forestgreen;
+    color: white;
 }
 a:visited{
-    color: darkgreen;
+    color: white;
 }
 input[type=button] {
     border: 3px solid forestgreen;
@@ -191,4 +191,26 @@ footer a{
 .footer-text {
     text-align: center;
     color: white;
+}
+
+.container {
+    width: 200px;
+    height: 120px;
+}
+
+/* Resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container2 {
+    width: 500px;
+    height: 350px;
+}
+
+/* Resize images */
+.container2 img {
+    width: 100%;
+    height: auto;
 }
