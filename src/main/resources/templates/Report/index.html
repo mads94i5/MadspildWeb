@@ -18,7 +18,7 @@
 <br>
         <form th:action="@{/report}" method="post" th:object="${report}">
         <input class="form" name="loc-name" placeholder="Indtast navn/sted.." type="text" th:field="*{name}" required/><br>
-        <input class="form" name="address" placeholder="Indtast addresse.." type="text" th:field="*{address}" required/><br>
+        <input class="form" name="address" placeholder="Indtast adresse.." type="text" th:field="*{address}" required/><br>
         <input class="form" name="zipcode" id="zipcode" placeholder="Indtast postnummer.." type="number" value="800" min="800" max="9990" minlength="3" maxlength="4" th:field="*{zipCode}" required/><br>
         <textarea class="form" name="comment" rows="10" placeholder="Beskrivelse.." th:field="*{description}" required></textarea><br>
         <input class="formBtn" type="submit" value="Indsend"/>
